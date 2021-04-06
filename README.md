@@ -10,7 +10,7 @@ Siga as instruções abaixo, faça commit e push dos seus desenvolvimentos e nos
   - Autenticação básica, usando pelo menos JWT
   - Tela inicial listando todos os projetos de um repositório no Github (pode ser o seu próprio), ordenados por ordem alfabética e permitindo filtro por tecnologia e nome. Para tal, será necessário puxar os dados via API do Github.
   - A lista deve ter paginação
-  - Ao clicar em um dos projetos listados, abrir tela interna com dados estatísticos daquele repositório, tais como: quantidade de commits, última atualização, quantidade de branches, etc.
+  - Ao clicar em um dos projetos listados, abrir tela interna exibindo dados daquele repositório (também obtidos via API do Github) tais como: quantidade de commits, última atualização, quantidade de branches, etc.
 
 #### Desafio 2 - Extra
 1.  Faça fork deste repositório
@@ -19,6 +19,6 @@ Siga as instruções abaixo, faça commit e push dos seus desenvolvimentos e nos
   - Autenticação básica, usando pelo menos JWT
   - Tela inicial listando todos os projetos de um repositório no Github (pode ser o seu próprio), ordenados por ordem alfabética e permitindo filtro por tecnologia e nome. Para tal, será necessário puxar os dados via API do Github.
   - A lista deve ter paginação
-  - Ao clicar em um dos projetos listados, abrir tela interna com dados estatísticos daquele repositório, tais como: quantidade de commits, última atualização, quantidade de branches, etc.
+  - Ao clicar em um dos projetos listados, abrir tela interna com dados daquele repositório (também obtidos via API do Github) tais como: quantidade de commits, última atualização, quantidade de branches, etc.
 
 Boa sorte!
