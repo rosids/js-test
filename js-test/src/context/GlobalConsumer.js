@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import GlobalContext from './GlobalContext';
-import requestRepos from '../services/api';
+import { requestRepos } from '../services/api';
 
 function GlobalProvider({ children }) {
   const [repos, setRepos] = useState([]);
   const [searchValue, setSearchValue] = useState('');
   const [searchType, setSearchType] = useState('');
+  const [repoDetailsCommits, setRepoDetailsCommits] = useState();
+  const [repoDetailsBranches, setRepoDetailsBranches] = useState();
+  const [repoDetailsLastUpdate, setRepoDetailsLastUpdate] = useState();
 
   useEffect(async () => {
     const repositories = await requestRepos();
@@ -18,10 +21,16 @@ function GlobalProvider({ children }) {
       repos,
       searchValue,
       searchType,
+      repoDetailsCommits,
+      repoDetailsBranches,
+      repoDetailsLastUpdate,
     },
     functions: {
       setSearchValue,
       setSearchType,
+      setRepoDetailsCommits,
+      setRepoDetailsBranches,
+      setRepoDetailsLastUpdate,
     },
   };
 

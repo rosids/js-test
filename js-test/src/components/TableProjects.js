@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+
 import GlobalContext from '../context/GlobalContext';
 
 export default function TableProject() {
@@ -10,21 +12,28 @@ export default function TableProject() {
   });
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Repositório</th>
-          <th>Linguagem</th>
-        </tr>
-      </thead>
-      <tbody>
-        {filterRepos.map(({ id, name, language }) => (
-          <tr key={id}>
-            <td>{name}</td>
-            <td>{language}</td>
+    <>
+      <table>
+        <thead>
+          <tr>
+            <th>Repositório</th>
+            <th>Linguagem</th>
+            <th>Detalhes</th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {filterRepos.map(({ id, name, language }) => (
+            <tr key={id}>
+              <td>{name}</td>
+              <td>{language}</td>
+              <Link to={`/project/${name}`}>
+                <button type="button">Detalhes</button>
+              </Link>
+            </tr>
+          ))}
+        </tbody>
+
+      </table>
+    </>
   );
 }
