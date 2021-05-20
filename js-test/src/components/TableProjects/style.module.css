@@ -1,0 +1,114 @@
+.tableContainer {
+  margin-top: 30px;
+}
+
+.table {
+  font-size: 15px;
+  text-align: center;
+}
+
+.table .thead {
+  background: #b38ce4;
+}
+
+.thead th {
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+}
+
+.table .tbody tr:nth-of-type(odd){
+  background-color: #DDDDDF;
+}
+
+.table .tbody tr:nth-of-type(even){
+  background-color: #D0C4DF;
+}
+
+.tbody td {
+  border-radius: 3px;
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+}
+
+.tbody td + a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.tbody td + a button  {
+  width: 100%;
+  background-color: limegreen;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tbody td + a button:hover {
+  background-color: rgba(29, 165, 29, 0.9);
+}
+
+@media screen and (max-width: 300px) {
+  .tableContainer {
+    margin: 20px auto auto;
+  }
+
+  .tbody td {
+    font-size: 14px;
+  }
+  
+  .tbody td + a button  {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 375px) {
+  .tableContainer {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  .thead th {
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+  }
+
+  .tbody td {
+    font-size: 13px;
+  }
+  
+  .tbody td + a button  {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .tbody td {
+    font-size: 13px;
+  }
+  
+  .tbody td + a button  {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .thead {
+    font-size: 25px;
+  }
+
+  .tbody td {
+    font-size: 25px;
+  }
+  
+  .tbody td + a button  {
+    font-size: 20px;
+  }
+}

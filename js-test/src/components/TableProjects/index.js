@@ -20,28 +20,30 @@ export default function TableProject() {
   const PAGE_SIZE = 5;
 
   return (
-    <div className={style.tableContainer}>
-      <table className={style.table}>
-        <thead className={style.thead}>
-          <tr>
-            <th>Repositório</th>
-            <th>Linguagem</th>
-            <th>–</th>
-          </tr>
-        </thead>
-        <tbody className={style.tbody}>
-          {filterRepos.slice(offset, offset + PAGE_SIZE).map(({ id, name, language }) => (
-            <tr key={id}>
-              <td>{name}</td>
-              <td>{language || '–'}</td>
-              <Link to={`/project/${name}`}>
-                <button type="button">Detalhes</button>
-              </Link>
+    <>
+      <div className={style.tableContainer}>
+        <table className={style.table}>
+          <thead className={style.thead}>
+            <tr>
+              <th>Repositório</th>
+              <th>Linguagem</th>
+              <th>–</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody className={style.tbody}>
+            {filterRepos.slice(offset, offset + PAGE_SIZE).map(({ id, name, language }) => (
+              <tr key={id}>
+                <td>{name}</td>
+                <td>{language || '–'}</td>
+                <Link to={`/project/${name}`}>
+                  <button type="button">Detalhes</button>
+                </Link>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <Pagination array={filterRepos} pageSize={PAGE_SIZE} />
-    </div>
+    </>
   );
 }
