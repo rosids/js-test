@@ -23,21 +23,23 @@ export default function TableProject() {
     <>
       <div className={style.tableContainer}>
         <table className={style.table}>
-          <thead className={style.thead}>
+          <thead>
             <tr>
               <th>Repositório</th>
               <th>Linguagem</th>
               <th>–</th>
             </tr>
           </thead>
-          <tbody className={style.tbody}>
+          <tbody>
             {filterRepos.slice(offset, offset + PAGE_SIZE).map(({ id, name, language }) => (
               <tr key={id}>
-                <td>{name}</td>
-                <td>{language || '–'}</td>
-                <Link to={`/project/${name}`}>
-                  <button type="button">Detalhes</button>
-                </Link>
+                <td data-label="Repositório">{name}</td>
+                <td data-label="Linguagem">{language || '–'}</td>
+                <td data-label="-">
+                  <Link to={`/project/${name}`} className={style.btn}>
+                    Detalhes
+                  </Link>
+                </td>
               </tr>
             ))}
           </tbody>

@@ -7,15 +7,17 @@ import style from './style.module.css';
 export default function Home() {
   const { values: { userRepos } } = useContext(GlobalContext);
   return (
-    <div className={style.homeContainer}>
-      <header className={style.header}>
-        Repositórios de
-        {' '}
-        @
-        {userRepos}
-      </header>
-      <SearchBar />
+    <>
+      <div className={style.homeContainer}>
+        <header className={style.header}>
+          Repositórios de
+          {' '}
+          @
+          {userRepos}
+        </header>
+        <SearchBar />
+      </div>
       <TableProject />
-    </div>
+    </>
   );
 }
