@@ -1,0 +1,45 @@
+.pagination {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  background-color: #6b47f2;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 254, 254, 0.12);
+  border: none;
+}
+
+.pagination button:hover {
+  font-size: 18px;
+}
+
+.pagination .currentPage {
+  border: none;
+  background-color: #F3A712;
+  color: white;
+  font-size: 13px;
+}
+
+.pagination button + button {
+  margin-left: 15px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .pagination button {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .pagination .currentPage {
+    font-size: 28px;
+  }
+}
