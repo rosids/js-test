@@ -25,6 +25,7 @@ body {
   padding: 10px;
   border-radius: 10px;
   border: solid 0.5px rgba(255, 255, 255, 0.144);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   font-size: 16px;
 }
 
@@ -42,8 +43,9 @@ body {
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
 }
 
 .form button:disabled {
-  background-color: rgba(29, 165, 29, 0.1);
+  opacity: 0.3;
 }
