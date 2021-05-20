@@ -61,6 +61,7 @@
   border: 1px solid transparent;
   font-size: 14px;
   opacity: 1;
+  border-radius: 6px;
 }
 
 .table tbody tr td .btn:hover {
