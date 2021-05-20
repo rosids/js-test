@@ -7,7 +7,7 @@ function GlobalProvider({ children }) {
   const [repos, setRepos] = useState([]);
   const [userRepos, setUserRepos] = useState();
   const [searchValue, setSearchValue] = useState('');
-  const [searchType, setSearchType] = useState('');
+  const [searchType, setSearchType] = useState('language');
   const [repoDetailsCommits, setRepoDetailsCommits] = useState();
   const [repoDetailsBranches, setRepoDetailsBranches] = useState();
   const [repoDetailsLastUpdate, setRepoDetailsLastUpdate] = useState();
