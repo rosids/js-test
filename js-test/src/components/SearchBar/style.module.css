@@ -1,0 +1,94 @@
+.form {
+  align-items: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.form select {
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  width: 50%;
+}
+
+.form input {
+  border: solid 0.5px rgba(255, 255, 255, 0.144);
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 4px;
+  outline: none;
+  margin-left: 10px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+@media screen and (max-width: 300px) {  
+  .form select {
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    width: 50%;
+  }
+  
+  .form input {
+    border: solid 0.5px rgba(255, 255, 255, 0.144);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    margin-left: 10px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 375px) {
+  .form select {
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    width: 50%;
+  }
+  
+  .form input {
+    border: solid 0.5px rgba(255, 255, 255, 0.144);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 4px;
+    outline: none;
+    margin-left: 10px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) { 
+  .form select {
+    border-radius: 5px;
+    font-size: 50px;
+    padding: 4px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    width: 50%;
+  }
+  
+  .form input {
+    font-size: 50px;
+  }
+}
+

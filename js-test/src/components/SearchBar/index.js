@@ -24,9 +24,8 @@ export default function SearchBar() {
         <option value="name">Nome</option>
         <option value="language">Tecnologia</option>
       </select>
-      <label htmlFor="searchValue">
-        <input name="searchValue" type="text" value={searchValue} onChange={({ target }) => setSearchValue(target.value)} />
-      </label>
+
+      <input name="searchValue" type="text" value={searchValue} onChange={({ target }) => setSearchValue(target.value)} />
     </form>
   );
 }
