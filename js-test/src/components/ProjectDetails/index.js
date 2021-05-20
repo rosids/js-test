@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 import GlobalContext from '../../context/GlobalContext';
 import style from './style.module.css';
 
@@ -40,6 +41,7 @@ export default function ProjectDetails() {
           {' '}
           {new Date(repoDetailsLastUpdate).toLocaleString('pt-br')}
         </p>
+        <Link to="/projects">Voltar</Link>
       </section>
     </div>
   );

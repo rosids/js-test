@@ -5,9 +5,68 @@
   min-height: 100vh;
 }
 
+.detailsContainer a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.detailsContainer a:hover {
+  color: black;
+}
+
 .details {
   background-color: white;
   padding: 50px;
-  border-radius: 15px;
+  border-radius: 18px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.details h3 {
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 300px) {
+  .detailsContainer {
+    margin: auto 15px;
+  }
+
+  .details {
+    font-size: 15px;
+  }
+
+  .details h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 301px) and (max-width: 375px) {
+  .detailsContainer {
+    margin: auto 20px;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .detailsContainer {
+    margin: auto 20px;
+  }
+
+  .details {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .details {
+    font-size: 25px;
+  }
+
+  .details h3 {
+    font-size: 33px;
+  }
 }
