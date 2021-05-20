@@ -44,5 +44,5 @@ body {
 }
 
 .form button:disabled {
-  background-color: rgba(50, 205, 50, 0.6);
+  background-color: rgba(29, 165, 29, 0.1);
 }
