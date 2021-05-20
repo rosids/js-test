@@ -9,11 +9,11 @@ export async function requestRepoLastUpdate(name) {
 }
 
 export async function requestRepoCommits(name) {
-  const results = await (await fetch(`https://api.github.com/repos/rosids/${name}/commits`)).json();
+  const results = await (await fetch(`https://api.github.com/repos/rosids/${name}/commits?per_page=100`)).json();
   return results;
 }
 
 export async function requestRepoBranches(name) {
-  const results = await (await fetch(`https://api.github.com/repos/rosids/${name}/branches`)).json();
+  const results = await (await fetch(`https://api.github.com/repos/rosids/${name}/branches?per_page=100`)).json();
   return results;
 }
